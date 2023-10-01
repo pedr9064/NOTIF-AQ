@@ -17,17 +17,35 @@
             margin: 0;
             padding: 0;
         }
+
         /* bagulho q resolve o tamanho da img*/
         img {
-            width: 65%;
-            max-width: 100%; 
-            height: auto; 
+            width: 50%;
+            max-width: 100%;
+            height: auto;
+        }
+        .img-insta {
+            width: 3%;
+            max-width: 100%;
+            height: auto;
         }
 
         .container>div>img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .imagem-superior-direita {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10%;
+            max-width: 100%;
+            height: auto;
+            background-color: #0c7;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 500px;
         }
 
         /* @keyframes changeColor { 
@@ -150,11 +168,12 @@
 
         section {
             width: 100%;
+            max-width: 100%;
             margin-top: 40px;
             background-color: #d8d8d8;
             text-align: center;
             border-radius: 10px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            font-family: 'Times New Roman', Times, serif
         }
 
         .game {
@@ -214,6 +233,8 @@
             z-index: 999;
         }
     </style>
+
+
     </head>
 
     <body>
@@ -221,6 +242,13 @@
         <header>
             <h1>NOTIF-AQ</h1>
             <p>Portal de noticias do campus Aquidauana</p>
+            <a href="https://www.ifms.edu.br/">
+                <img class="imagem-superior-direita" src="imgs/iflogo.png" alt="IFMS">
+            </a>
+            <a href="https://instagram.com/notif.aq?igshid=MzRlODBiNWFlZA==">
+                <img class="img-insta" src="imgs/instalogo.png" alt="Instagram">
+            </a>
+
         </header>
 
         <main>
@@ -231,7 +259,7 @@
                     <li>
                         <h2>Catástrofe Iminente: A Trolada Final de Everson Zoio Abala o Mundo</h2>
                         <div>
-                            <img src="trollada.jpg" alt="" >
+                            <img src="imgs/trollada.jpg" alt="">
                         </div>
                         <p>Uma catástrofe de proporções apocalípticas está prestes a abalar o mundo, e não
                             envolve<br>
@@ -295,7 +323,7 @@
             <footer>
                 <p>&copy; 2023 NOTIF-AQ</p>
             </footer>
-           
+
     </body>
 
 </html>
